@@ -15,7 +15,7 @@ namespace TeamCitySharper
 
             if (!baseurl.StartsWith("http://") || !baseurl.StartsWith("https://"))
             {
-                var prefix = useSSL ? "http://" : "https://";
+                var prefix = useSSL ? "https://" : "http://";
                 baseurl = prefix + baseurl;
             }
             ServerUrl = baseurl;

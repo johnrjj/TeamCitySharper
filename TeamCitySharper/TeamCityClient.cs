@@ -36,7 +36,7 @@ namespace TeamCitySharper
                 throw new TeamCityApiException(string.Format("RestSharp response status: {0} - HTTP response: {1} - {2} - {3}", response.ResponseStatus, response.StatusCode, response.StatusDescription, response.Content));
         }
 
-        public List<Project> GetProjects()
+        public Projects GetProjects()
         {
             var request = new RestRequest()
             {
@@ -45,7 +45,7 @@ namespace TeamCitySharper
                 Method = Method.GET
             };
 
-            return Execute<List<Project>>(request, HttpStatusCode.OK);
+            return Execute<Projects>(request, HttpStatusCode.OK);
         }
 
     }

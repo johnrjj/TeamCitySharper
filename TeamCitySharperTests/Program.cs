@@ -13,10 +13,10 @@ namespace TeamCitySharperTests
         {
 
             TeamCityAccount account;
-
-            if (args[0] == null || args[1] == null || args[2] == null)
+            
+            if (args.Length < 3 || args[0] == null || args[1] == null || args[2] == null)
             {
-                account = new TeamCityAccount("username", "password", "teamcity:8001");
+                account = new TeamCityAccount("user", "password", "teamcity:port");
             }
             else
             {
