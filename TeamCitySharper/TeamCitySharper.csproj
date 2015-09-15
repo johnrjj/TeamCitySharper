@@ -49,6 +49,10 @@
     <Compile Include="TeamCityAccount.cs" />
     <Compile Include="TeamCityApiException.cs" />
     <Compile Include="TeamCityClient.cs" />
+    <Compile Include="TeamCityModels\Build.cs" />
+    <Compile Include="TeamCityModels\Builds.cs" />
+    <Compile Include="TeamCityModels\BuildType.cs" />
+    <Compile Include="TeamCityModels\BuildTypes.cs" />
     <Compile Include="TeamCityModels\Project.cs" />
     <Compile Include="TeamCityModels\Projects.cs" />
   </ItemGroup>
