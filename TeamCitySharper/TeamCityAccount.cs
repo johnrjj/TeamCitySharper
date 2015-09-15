@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TeamCitySharper
+﻿namespace TeamCitySharper
 {
     public class TeamCityAccount
     {
@@ -20,7 +18,5 @@ namespace TeamCitySharper
             }
             ServerUrl = baseurl;
         }
-
-
     }
 }

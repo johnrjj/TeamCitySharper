@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using RestSharp;
 using RestSharp.Authenticators;
 using TeamCitySharper.TeamCityModels;
@@ -10,7 +7,6 @@ namespace TeamCitySharper
 {
     public class TeamCityClient
     {
-
         private readonly RestClient client;
         public TeamCityClient(TeamCityAccount account)
         {
@@ -40,13 +36,12 @@ namespace TeamCitySharper
         {
             var request = new RestRequest()
             {
-                Resource = ResourceUrls.Project(),
+                Resource = ResourceUrls.Projects(),
                 RequestFormat = DataFormat.Json,
                 Method = Method.GET
             };
 
             return Execute<Projects>(request, HttpStatusCode.OK);
         }
-
     }
 }
